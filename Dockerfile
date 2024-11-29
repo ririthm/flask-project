@@ -7,6 +7,7 @@ RUN pip install -r requirements.txt
 RUN pwd
 RUN ls -a
 EXPOSE 5000
+ENV FLASK_APP=board
 COPY . .
 RUN ls -a
 CMD ["python", "-m", "flask", "--app", "board", "run", "--host=0.0.0.0", "--debug"]

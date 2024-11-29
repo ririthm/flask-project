@@ -1,7 +1,10 @@
 import sqlite3
 import click
 from flask import current_app, g
+<<<<<<< HEAD
 import psycopg2
+=======
+>>>>>>> origin/dev
 
 def init_app(app):
     app.teardown_appcontext(close_db)
@@ -31,3 +34,8 @@ def close_db(e=None) :
 
     if db is not None:
         db.close()
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> origin/dev

@@ -1,4 +1,4 @@
 Flask
 click
 python-dotenv
-
+psycopg2-binary
